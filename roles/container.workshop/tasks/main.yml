@@ -1,7 +1,7 @@
 # file: roles/container.workshop/tasks/main.yml
 ---
 
-- include: subscriptionmanager.yml
+# - include: subscriptionmanager.yml
 
 - include: workshop_setup.yml
 

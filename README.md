@@ -97,7 +97,7 @@ To target the newly created EC2 instance use the `inventory` folder. The [ec2.py
 
 
 ```
-ansible-playbook -i inventory/terraform.py /tmp/terraform/terraform.tfstate aws_ec2_instance.yml
+ansible-playbook -i inventory aws_ec2_instance.yml
 ```
 
 
@@ -106,5 +106,8 @@ ansible-playbook -i inventory/terraform.py /tmp/terraform/terraform.tfstate aws_
 Students should use a web browser to connect to their instance and download the ssh key from the newly created instance. 
 
 
+```
+student.*.redhat-fierce.io
+```
 
-
+![Student Login](img/student-login.png)

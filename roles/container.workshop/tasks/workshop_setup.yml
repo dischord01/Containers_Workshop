@@ -51,8 +51,13 @@
     - rhel
 
 
-- name: Git clone PatternFly website
-  git: repo=https://github.com/dischord01/patternfly.git  dest=/opt/rh/nginx16/root/usr/share/nginx/patternfly
+# - name: Git clone PatternFly website
+#   git: repo=https://github.com/dischord01/patternfly.git  dest=/opt/rh/nginx16/root/usr/share/nginx/patternfly
+#   tags:
+#     - rhel
+
+- name: Just incase GitHub gets DDoS
+  unarchive: src=patternfly.tar.gz dest=/opt/rh/nginx16/root/usr/share/nginx
   tags:
     - rhel
 
