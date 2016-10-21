@@ -1,0 +1,12 @@
+# file: roles/container.workshop/vars/main.yml
+---
+#####################################################
+# RHEL Subscription Info:
+#####################################################
+username: ""
+password: ""
+pool_id: ""
+
+workshop_password: "containers!@#" 
+
+

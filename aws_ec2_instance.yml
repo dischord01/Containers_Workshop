@@ -1,0 +1,22 @@
+# file: aws_ec2_instance.yml
+---
+
+- name: Configure Container Instances
+  hosts: tag_Name_container
+  become: yes
+  remote_user: "ec2-user"
+  roles:
+    - { role: container.workshop }
+
+
+#############################################################
+#  USAGE
+#############################################################
+
+# Using ec2.py to query AWS for your instance by AWS Tags
+#
+# ansible-playbook -i inventory/ec2.py aws_ec2_instance.yml
+
+# Using terraform.py to target your instance 
+#
+# ansible-playbook -i inventory/terraform.py aws_ec2_instance.yml
